@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="340" viewBox="0 0 960 340" role="img" aria-labelledby="title description">
+  <title id="title">Fortinet VPN widget for Omarchy</title>
+  <desc id="description">Illustration of the connected, disconnected, connecting and unavailable VPN badges. Hover for connection details and traffic; click to open FortiClient.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1">
+      <stop stop-color="#1e2433"/>
+      <stop offset="1" stop-color="#11151f"/>
+    </linearGradient>
+    <g id="shield" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M7 1 12.5 3 12 9Q11 12.5 7 15Q3 12.5 2 9L1.5 3Z"/>
+    </g>
+    <g id="secure">
+      <use href="#shield"/>
+      <path d="m4 7.5 2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="unavailable">
+      <use href="#shield"/>
+      <path d="M7 5v3.5m0 2V11" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+    </g>
+  </defs>
+  <rect width="960" height="340" rx="20" fill="url(#background)"/>
+  <rect x=".5" y=".5" width="959" height="339" rx="20" fill="none" stroke="#303748"/>
+  <g font-family="DejaVu Sans, sans-serif">
+    <text x="40" y="43" fill="#a6e3a1" font-size="12" font-weight="700" letter-spacing="2">OMARCHY / FORTINET VPN</text>
+    <text x="40" y="89" fill="#edf0f7" font-size="30" font-weight="700">Your VPN status, in the top bar.</text>
+    <text x="40" y="118" fill="#a9b2c5" font-size="15">Connection details and traffic, a hover away.</text>
+
+    <g transform="translate(40 150)">
+      <rect width="208" height="110" rx="12" fill="#171d29" stroke="#303748"/>
+      <rect x="22" y="20" width="128" height="34" rx="17" fill="#a6e3a1" fill-opacity=".09" stroke="#a6e3a1" stroke-opacity=".4"/>
+      <use href="#secure" transform="translate(37 28) scale(1.15)" color="#a6e3a1"/>
+      <text x="63" y="42" fill="#edf0f7" font-size="14" font-weight="700" letter-spacing=".6">VPN ON</text>
+      <text x="22" y="85" fill="#a9b2c5" font-size="15">Connected</text>
+    </g>
+    <g transform="translate(264 150)">
+      <rect width="208" height="110" rx="12" fill="#171d29" stroke="#303748"/>
+      <rect x="22" y="20" width="137" height="34" rx="17" fill="#f38ba8" fill-opacity=".09" stroke="#f38ba8" stroke-opacity=".4"/>
+      <use href="#unavailable" transform="translate(37 28) scale(1.15)" color="#f38ba8"/>
+      <text x="63" y="42" fill="#edf0f7" font-size="14" font-weight="700" letter-spacing=".6">VPN OFF</text>
+      <text x="22" y="85" fill="#a9b2c5" font-size="15">Disconnected</text>
+    </g>
+    <g transform="translate(488 150)">
+      <rect width="208" height="110" rx="12" fill="#171d29" stroke="#303748"/>
+      <rect x="22" y="20" width="120" height="34" rx="17" fill="#cdd6f4" fill-opacity=".09" stroke="#cdd6f4" stroke-opacity=".32"/>
+      <use href="#unavailable" transform="translate(37 28) scale(1.15)" color="#cdd6f4"/>
+      <text x="63" y="42" fill="#edf0f7" font-size="14" font-weight="700" letter-spacing=".6">VPN …</text>
+      <text x="22" y="85" fill="#a9b2c5" font-size="15">Connecting</text>
+    </g>
+    <g transform="translate(712 150)">
+      <rect width="208" height="110" rx="12" fill="#171d29" stroke="#303748"/>
+      <rect x="22" y="20" width="116" height="34" rx="17" fill="#cdd6f4" fill-opacity=".09" stroke="#cdd6f4" stroke-opacity=".32"/>
+      <use href="#unavailable" transform="translate(37 28) scale(1.15)" color="#cdd6f4"/>
+      <text x="63" y="42" fill="#edf0f7" font-size="14" font-weight="700" letter-spacing=".6">VPN ?</text>
+      <text x="22" y="85" fill="#a9b2c5" font-size="15">Status unavailable</text>
+    </g>
+    <text x="40" y="305" fill="#a9b2c5" font-size="13">Click: open FortiClient</text>
+    <text x="275" y="305" fill="#a9b2c5" font-size="13">Right-click: refresh</text>
+    <text x="920" y="305" fill="#7e899e" font-size="12" text-anchor="end">WIDGET PREVIEW</text>
+  </g>
+</svg>

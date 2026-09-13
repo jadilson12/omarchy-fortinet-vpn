@@ -2,6 +2,10 @@
 
 A compact, theme-aware shield badge for the Omarchy top bar. See whether FortiClient and its VPN tunnel are connected without opening the client.
 
+![Illustration of the Fortinet VPN widget showing connected, disconnected, connecting and unavailable states](docs/images/widget-preview.svg)
+
+*Illustrative preview. The widget uses your active Omarchy theme.*
+
 ## Features
 
 - Checks FortiClient and its tunnel at a configurable interval (five seconds by default).
@@ -14,6 +18,10 @@ A compact, theme-aware shield badge for the Omarchy top bar. See whether FortiCl
 - Shows connected, disconnected, connecting and unavailable states.
 
 ## Requirements
+
+**Install and configure the official FortiClient Linux client before installing this plugin.** Get the client from [Fortinet's official downloads page](https://www.fortinet.com/support/product-downloads), or use the official package provided by your organization's IT team. Configure your VPN connection in FortiClient, then verify that `forticlient vpn status` works as your desktop user.
+
+This plugin monitors an existing FortiClient installation; it does not install the VPN client or configure a connection.
 
 - Omarchy Quattro with the Quickshell plugin system and `omarchy plugin` commands.
 - Official FortiClient Linux client: `forticlient vpn status` must work for your desktop user.
