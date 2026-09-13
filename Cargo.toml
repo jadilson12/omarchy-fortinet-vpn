@@ -1,0 +1,13 @@
+[package]
+name = "fortinet-vpn-status"
+version = "1.0.0"
+authors = ["jadilson12"]
+edition = "2021"
+license = "MIT"
+description = "Read-only FortiClient tunnel status for the Omarchy bar"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+toml = "0.8"
+libc = "0.2"

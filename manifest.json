@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "jadilson12.fortinet-vpn",
+  "name": "Fortinet VPN",
+  "version": "1.0.0",
+  "author": "jadilson12",
+  "license": "MIT",
+  "description": "Live FortiClient tunnel status, traffic speeds and diagnostics with TOML preferences.",
+  "kinds": ["bar-widget"],
+  "entryPoints": {"barWidget": "BarWidget.qml"},
+  "barWidget": {
+    "displayName": "Fortinet VPN",
+    "description": "VPN status, traffic speeds and diagnostics. Click to open FortiClient; right-click to refresh.",
+    "category": "Network",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {},
+    "schema": []
+  }
+}

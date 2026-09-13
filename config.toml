@@ -1,0 +1,4 @@
+# Reloaded on each status check. No rebuild is needed after editing.
+poll_interval_seconds = 5 # Allowed range: 2–300
+show_rates = false        # Show download/upload speed beside the badge
+show_connection_name = false
