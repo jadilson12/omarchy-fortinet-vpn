@@ -32,15 +32,16 @@ This plugin targets the official FortiClient client and its `fctvpn*` interfaces
 
 ## Install from GitHub
 
-Download, build and enable the complete Omarchy widget with this command:
+Download, build and enable the complete Omarchy widget by running these commands in order:
 
 ```bash
-omarchy plugin add https://github.com/jadilson12/omarchy-fortinet-vpn.git && (
-  cd "$HOME/.config/omarchy/plugins/jadilson12.fortinet-vpn" &&
-  cargo build --release --locked --target-dir target &&
-  omarchy plugin enable jadilson12.fortinet-vpn
-)
+omarchy plugin add https://github.com/jadilson12/omarchy-fortinet-vpn.git
+cd "$HOME/.config/omarchy/plugins/jadilson12.fortinet-vpn"
+cargo build --release --locked --target-dir target
+omarchy plugin enable jadilson12.fortinet-vpn
 ```
+
+These commands work in bash, zsh and fish. Add `--yes` to `omarchy plugin add` to skip its confirmation prompt.
 
 For a local checkout, run the same build command in the project directory before enabling the plugin. The widget runs `target/release/fortinet-vpn-status` directly, so keep that binary in the plugin directory. Rebuild after updating the Rust source or `Cargo.lock`. A missing binary is shown as status unavailable.
 
